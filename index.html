@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ultimo</title>
+
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="index.js"></script>
+    <style>
+        /* this will adjust the position of the text and decorate the size,font and color */
+        h1 
+        {
+            font-family: Sinera;
+            font-size: 150px;
+            width: 50%;
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* this will support the h1 to be position in the center of the page */
+        h2
+        {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            text-align: center;
+            height: 32%;
+        }
+
+        /* when a page width is smaller than 870px, the h1 will change text size */
+        @media (max-width:870px)
+        {
+            h1
+            {
+                font-size: 100px;
+                transition: all .5s;
+            }
+        }
+
+        /* when a page width is bigger than 870px, the h1 will change text size */
+        @media (min-width:870px)
+        {
+            h1
+            {
+                font-size: 150px;
+                transition: all .5s;
+            }
+        }
+
+        /* when a page width is smaller than 600px, the h1 will change text size */
+        @media (max-width: 600px)
+        {
+            h1
+            {
+                font-size: 75px;
+                transition: all .5s;
+            }
+        }
+        .clock
+        {
+          font-size: 30px;
+          color: white;
+          width: 50%;
+          margin: auto;
+          padding: 1px;
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Ultimo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="food.html">Food</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+              </li>
+            </ul>
+            <p class="clock"></p>
+            <p id="timer" class="clock">timer</p>
+          </div>
+        </div>
+      </nav>
+
+    <!-- This is where the background picture is and the h1 -->
+    <section style="background: url(abstract_pattern_design_background_2007.jpg) no-repeat; background-size: cover; height: calc(100vh - 80px);">
+        <h2></h2>
+        <h1>WELCOME</h1>
+    </section>
+</body>
+</html>
